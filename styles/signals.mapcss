@@ -80,6 +80,18 @@ way["railway:atb-vv"=yes].tracks
 	z-index: 4;
 	color: #FF8C00;
 }
+way["railway:kvb"=yes].tracks
+{
+	z-index: 5;
+	color: #B2FF33; /* pale green */
+}
+way["railway:tvm"=yes].tracks,
+way["railway:tvm"=300].tracks,
+way["railway:tvm"=430].tracks
+{
+	z-index: 6;
+	color: #78FF00; /* bright green */
+}
 way["construction:railway:etcs"]["construction:railway:etcs"!=no]["construction:railway:etcs"!=0].tracks,
 way.ctracks
 {
@@ -743,6 +755,46 @@ node|z17-[railway=signal]["railway:signal:direction"]["railway:signal:minor"="AT
 	icon-image: "icons/at/weiterfahrt-erlaubt-28.png";
 	icon-width: 7;
 	icon-height: 14;
+	text-allow-overlap: true;
+	allow-overlap: true;
+}
+
+/********************************************/
+/* DE signals for helper engines type Ts    */
+/* DE Nachschieben einstellen Ts 1          */
+/********************************************/
+node|z14-[railway=signal]["railway:signal:direction"]["railway:signal:helper_engine"="DE-ESO:ts"]["railway:signal:helper_engine:form"=sign]["railway:signal:helper_engine:states"="DE-ESO:ts1"]
+{
+	z-index: 2000;
+	text: "ref";
+	text-offset: 11;
+	text-color: black;
+	text-halo-radius: 1;
+	text-halo-color: white;
+	font-weight: bold;
+	icon-image: "icons/de/ts1-22.png";
+	icon-width: 12;
+	icon-height: 11;
+	text-allow-overlap: true;
+	allow-overlap: true;
+}
+
+/**************************************************************************/
+/* DE signals for helper engines type Ts                                  */
+/* DE Halt für zurückkehrende Schiebelokomotiven und Sperrfahrten Ts 3    */
+/**************************************************************************/
+node|z14-[railway=signal]["railway:signal:direction"]["railway:signal:helper_engine"="DE-ESO:ts"]["railway:signal:helper_engine:form"=semaphore]["railway:signal:helper_engine:states"="DE-ESO:ts2;DE-ESO:ts3"]
+{
+	z-index: 2000;
+	text: "ref";
+	text-offset: 11;
+	text-color: black;
+	text-halo-radius: 1;
+	text-halo-color: white;
+	font-weight: bold;
+	icon-image: "icons/de/ts3-22.png";
+	icon-width: 12;
+	icon-height: 11;
 	text-allow-overlap: true;
 	allow-overlap: true;
 }
@@ -1743,7 +1795,6 @@ node|z14-[railway=signal]["railway:signal:direction"]["railway:signal:combined"=
 	icon-height: 15;
 	set .fi_main_combined_signals;
 }
-
 
 /***********************************************/
 /* FI main light signals which                 */

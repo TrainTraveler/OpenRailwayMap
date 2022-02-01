@@ -547,7 +547,7 @@ msgid "Operating Sites"
 msgstr "Betriebsstellen"
 
 msgid "No information about train protection"
-msgstr "Keine Information über die Zugbeeinflussung"
+msgstr "Keine Information zur Zugsicherung"
 
 msgid "Hp-Lichthauptsignal ohne Angabe der Signalzustände"
 msgstr "Hp-Lichthauptsignal ohne Angabe der Signalzustände"
@@ -783,4 +783,10 @@ msgid "Imprint &amp; Privacy Policy"
 msgstr "Impressum &amp; Datenschutz"
 
 msgid "automatische treinbeïnvloeding"
+msgstr ""
+
+msgid "Transmission voie-machine (TVM)"
+msgstr ""
+
+msgid "Contrôle de vitesse par balises (KVB)"
 msgstr ""
