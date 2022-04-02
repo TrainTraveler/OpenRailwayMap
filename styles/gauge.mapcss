@@ -51,14 +51,9 @@ way.mini_tracks_present
 
 /* gauge text if available */
 
-way[gauge].tracks
+way[gauge][gauge!=narrow][gauge!=broad][gauge!=standard][gauge!=unknown][gauge!=miniature][gauge!=monorail][gauge!=dual][gauge!=multiple].tracks
 {
 	text: eval(tag("gauge"));
-}
-
-way[!gauge].tracks
-{
-	text: eval(tag("railway"));
 }
 
 way[railway].tracks
